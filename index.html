@@ -62,10 +62,10 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>ClickP4</h1>
-            <h3>Policy-Aware Modular Programming Architecture of the Programmable Data Plane</h3>
+            <h3>Policy-Aware Modular Programming Architecture for P4</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-            <a href="https://github.com/clickp4/clickp4" class="btn btn-dark btn-lg">Source Code</a>
+            <a href="https://github.com/clickp4/clickp4" class="btn btn-dark btn-lg">View Source Code</a>
         </div>
     </header>
 
@@ -73,9 +73,37 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 text-center">
+                    <h2>Background of ClickP4</h2>
+                    <p class="lead">
+                        <a href="http://p4.org/">P4</a> has started a new era of programming networks for its
+                        ability of defining data plane behaviors. By building P4 programs, network operators can
+                        introduce diverse novel features such as network telemetry, stateful packet filtering and
+                        novel routing protocols into network devices.
+                    </p>
+
+                    <h2>Motivations of ClickP4</h2>
+                    <p class="lead">
+                        However, as the required features grow in number, developing and running P4 programs that
+                        implement these features can lead to various problems.
+                    </p>
+                    <ul class="lead">
+                        <li> P4 lacks a module programming method to facilitate the development of P4 programs. As P4
+                            programs grow in size and complexity, developing monolithic P4 programs from scratch is
+                            prone to errors and can cost considerable time and efforts.
+                        </li>
+                        <li> When executing a P4 program, the orchestration of features can hardly be modified except
+                            for reprogramming and reconfiguring the program. Such inflexible orchestration cannot
+                            satisfy the policies which need new orchestration of features at runtime, thus
+                            potentially shrinks the set of supported network policies.
+                        </li>
+                        <li> There is no explicit checking for P4 programs to verify whether a feature should enforce
+                            the policy. Conflicts may be triggered when some unwanted features apply wrong table
+                            rules to the packets belonging to particular policies. And these conflicts can
+                            potentially cause black holes and other violations of the policies.
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- /.row -->
@@ -89,7 +117,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>ClickP4 Source Code</h2>
+                    <h2>ClickP4 Framework</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -222,6 +250,7 @@
     </aside>
 
     <!-- Map -->
+    <!--
     <section id="contact" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
@@ -229,7 +258,7 @@
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
     </section>
-
+    -->
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -258,7 +287,7 @@
                     </ul>
                     -->
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Yu Zhou 2017</p>
+                    <p class="text-muted">Copyright &copy; NetArch LAB 2017</p>
                 </div>
             </div>
         </div>
