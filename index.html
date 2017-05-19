@@ -73,7 +73,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1 text-left">
+                <div class="col-lg-4  text-left">
                     <h3>Background of ClickP4</h3>
                     <p class="lead">
                         <a href="http://p4.org/">P4</a> has started a new era of programming networks for its
@@ -85,11 +85,14 @@
                 <div class="col-lg-4 text-left">
                     <h3>Motivations of ClickP4</h3>
                     <ul class="lead">
-                        <li> <strong>Complexity</strong>: Developing monolithic P4 programs from scratch is prone to errors and can be a source of complexity.
+                        <li> <strong>Complexity</strong>: Developing monolithic P4 programs from scratch is prone to
+                            errors and can be a source of complexity.
                         </li>
-                        <li> <strong>Inflexibility</strong>: Features implemented by a P4 program can hardly be re-orchestrated at runtime, which reduces the flexibility of programmable networks.
+                        <li> <strong>Inflexibility</strong>: Features implemented by a P4 program can hardly be
+                            re-orchestrated at runtime, which reduces the flexibility of programmable networks.
                         </li>
-                        <li> <strong>Unreliability</strong>: There is no isolation mechanism for network policies to protect themselves from being enforced by undesired features.
+                        <li> <strong>Unreliability</strong>: There is no isolation mechanism for network policies to
+                            protect themselves from being enforced by undesired features.
                         </li>
                     </ul>
                 </div>
@@ -133,7 +136,8 @@
                                 <h4>
                                     <strong>ClickP4 Core</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>The core code of ClickP4 framework. It supports for composition of modules and
+                                    defines the special nodes in ClickP4, such as Rewinder and Initializer.</p>
                                 <a href="https://github.com/clickp4/clickp4/tree/master/src/core" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -146,7 +150,9 @@
                                 <h4>
                                     <strong>ClickP4 Modules</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>The module repository of ClickP4. Operators can composes various modules to a
+                                    static P4 program by registering the required modules in the configuretion files.
+                                </p>
                                 <a href="https://github.com/clickp4/clickp4/tree/master/src/module" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -159,7 +165,8 @@
                                 <h4>
                                     <strong>ClickP4 Module Context</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>Context of the modules. All components in the context and shared globally. And
+                                    the context can beused to express dependencies among modules.</p>
                                 <a href="https://github.com/clickp4/clickp4/tree/master/src/context" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -170,10 +177,12 @@
                                 <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>ClickP4 Control Plane</strong>
+                                    <strong>ClickP4 Protocol</strong>
                                 </h4>
-                                <p>TODO.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Protocol definitions for ClickP4. Developers can extend the protocol stack by adding
+                                    componennts into ClickP4. Besides, it also defines the packets parser.
+                                </p>
+                                <a href="https://github.com/clickp4/clickp4/tree/master/src/protocol" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -189,7 +198,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>Building and runnning programmable networks with simpilicity, flexibility and reliability! </h1>
         </div>
     </aside>
 
@@ -270,7 +279,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>ClickP4</strong>
                     </h4>
-                    <p>FIT, Tsinghua University
+                    <p>FIT 4-204, Tsinghua University
                         <br>Beijing, 100084</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yuz.thu@gmail.com">yuz.thu@gmail.com</a>
@@ -291,7 +300,7 @@
                     </ul>
                     -->
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; NetArch LAB 2017</p>
+                    <p class="text-muted">Copyright &copy; NetArch Lab 2017</p>
                 </div>
             </div>
         </div>
