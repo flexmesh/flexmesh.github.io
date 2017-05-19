@@ -73,39 +73,43 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-10 text-center">
-                    <h2>Background of ClickP4</h2>
+                <div class="col-lg-4 col-lg-offset-1 text-left">
+                    <h3>Background of ClickP4</h3>
                     <p class="lead">
                         <a href="http://p4.org/">P4</a> has started a new era of programming networks for its
                         ability of defining data plane behaviors. By building P4 programs, network operators can
                         introduce diverse novel features such as network telemetry, stateful packet filtering and
                         novel routing protocols into network devices.
                     </p>
-
-                    <h2>Motivations of ClickP4</h2>
-                    <p class="lead">
-                        However, as the required features grow in number, developing and running P4 programs that
-                        implement these features can lead to various problems.
-                    </p>
+                </div>
+                <div class="col-lg-4 text-left">
+                    <h3>Motivations of ClickP4</h3>
                     <ul class="lead">
-                        <li> P4 lacks a module programming method to facilitate the development of P4 programs. As P4
-                            programs grow in size and complexity, developing monolithic P4 programs from scratch is
-                            prone to errors and can cost considerable time and efforts.
+                        <li> <strong>Complexity</strong>: Developing monolithic P4 programs from scratch is prone to errors and can be a source of complexity.
                         </li>
-                        <li> When executing a P4 program, the orchestration of features can hardly be modified except
-                            for reprogramming and reconfiguring the program. Such inflexible orchestration cannot
-                            satisfy the policies which need new orchestration of features at runtime, thus
-                            potentially shrinks the set of supported network policies.
+                        <li> <strong>Inflexibility</strong>: Features implemented by a P4 program can hardly be re-orchestrated at runtime, which reduces the flexibility of programmable networks.
                         </li>
-                        <li> There is no explicit checking for P4 programs to verify whether a feature should enforce
-                            the policy. Conflicts may be triggered when some unwanted features apply wrong table
-                            rules to the packets belonging to particular policies. And these conflicts can
-                            potentially cause black holes and other violations of the policies.
+                        <li> <strong>Unreliability</strong>: There is no isolation mechanism for network policies to protect themselves from being enforced by undesired features.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-left">
+                    <h3>ClickP4 Offers</h3>
+                    <p class="lead"> ClickP4 is proposed as a policy-aware modular programming architecture for P4.</p>
+                    <ul class="lead">
+                        <li> <strong>Simplicity</strong> for building P4 programs
+                        </li>
+                        <li> <strong>Flexibility</strong> for orchestrating program features
+                        </li>
+                        <li> <strong>Reliability</strong> for enforcing network policies
                         </li>
                     </ul>
                 </div>
             </div>
+
+
+        </div>
+
             <!-- /.row -->
         </div>
         <!-- /.container -->
@@ -190,7 +194,7 @@
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -237,7 +241,7 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside class="call-to-action bg-primary hiden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
