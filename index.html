@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ClickP4">
+    <meta name="description" content="Flex4">
     <meta name="author" content="Yu Zhou">
 
-    <title>ClickP4</title>
+    <title>Flex4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -61,11 +61,11 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>ClickP4</h1>
-            <h3>Policy-Aware Modular Programming Architecture for P4</h3>
+            <h1>Flex4</h1>
+            <h3>On-demand Feature Orchestration for P4-specific Programmable Data Plane</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-            <a href="https://github.com/clickp4" class="btn btn-dark btn-lg">View Source Code</a>
+            <a href="https://github.com/Flex4" class="btn btn-dark btn-lg">View Source Code</a>
         </div>
     </header>
 
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4  text-left">
-                    <h3>Background of ClickP4</h3>
+                    <h3>Background of Flex4</h3>
                     <p class="lead">
                         <a href="http://p4.org/">P4</a> has started a new era of programming networks for its
                         ability of defining data plane behaviors. By building P4 programs, network operators can
@@ -83,28 +83,30 @@
                     </p>
                 </div>
                 <div class="col-lg-4 text-left">
-                    <h3>Motivations of ClickP4</h3>
+                    <h3>Motivations of Flex4</h3>
                     <ul class="lead">
-                        <li> <strong>Complexity</strong>: Developing monolithic P4 programs from scratch is prone to
-                            errors and can be a source of complexity.
+                        <li> <strong>Complexity</strong>: Developing general-purpose P4 programs composed of various 
+                             network features is error-prone and can be a source of complexity.
                         </li>
-                        <li> <strong>Inflexibility</strong>: Features implemented by a P4 program can hardly be
-                            re-orchestrated at runtime, which reduces the flexibility of programmable networks.
+                        <li> <strong>Inflexibility</strong>: The data plane supports a limited set of feature orchestrations 
+                             and is incapable of on-demand feature orchestrations at runtime.
                         </li>
+                        <!--
                         <li> <strong>Unreliability</strong>: There is no isolation mechanism for network policies to
                             protect themselves from being enforced by undesired features.
                         </li>
+                        -->
                     </ul>
                 </div>
                 <div class="col-lg-4 text-left">
-                    <h3>ClickP4 Offers</h3>
-                    <p class="lead"> ClickP4 is proposed as a policy-aware modular programming architecture for P4.</p>
+                    <h3>Flex4 Offers</h3>
+                    <p class="lead"> Flex4 is proposed as a systematic framework P4.</p>
                     <ul class="lead">
                         <li> <strong>Simplicity</strong> for building P4 programs
                         </li>
-                        <li> <strong>Flexibility</strong> for orchestrating program features
+                        <li> <strong>Flexibility</strong> for orchestrating network features
                         </li>
-                        <li> <strong>Reliability</strong> for enforcing network policies
+                        <li> <strong>High Perfromance</strong> for enforcing network features
                         </li>
                     </ul>
                 </div>
@@ -124,7 +126,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>ClickP4 Framework</h2>
+                    <h2>Flex4 Framework</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -134,11 +136,11 @@
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>ClickP4 Core</strong>
+                                    <strong>Flex4 Core</strong>
                                 </h4>
-                                <p>The core code of ClickP4 framework. It supports for composition of modules and
-                                    defines the special nodes in ClickP4, such as Rewinder and Initializer.</p>
-                                <a href="https://github.com/clickp4/clickp4/tree/master/src/core" class="btn btn-light">Learn More</a>
+                                <p>The core code of Flex4 framework. It supports for composition of features and
+                                    defines the management componennts in Flex4, such as Rewinder and Initializer.</p>
+                                <a href="https://github.com/Flex4/Flex4/tree/master/src/core" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -148,12 +150,12 @@
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>ClickP4 Modules</strong>
+                                    <strong>Flex4 Modules</strong>
                                 </h4>
-                                <p>The module repository of ClickP4. Operators can composes various modules to a
-                                    static P4 program by registering the required modules in the configuretion files.
+                                <p>The feature library of Flex4. Operators can describe the orchestration of various network features 
+                                   by registering the required modules in the configuretion files.
                                 </p>
-                                <a href="https://github.com/clickp4/clickp4/tree/master/src/module" class="btn btn-light">Learn More</a>
+                                <a href="https://github.com/Flex4/Flex4/tree/master/src/module" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -163,11 +165,11 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>ClickP4 Module Context</strong>
+                                    <strong>Flex4 Module Context</strong>
                                 </h4>
                                 <p>Context of the modules. All components in the context and shared globally. And
-                                    the context can beused to express dependencies among modules.</p>
-                                <a href="https://github.com/clickp4/clickp4/tree/master/src/context" class="btn btn-light">Learn More</a>
+                                    the context can beused to pass parameters among modules.</p>
+                                <a href="https://github.com/Flex4/Flex4/tree/master/src/context" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -177,12 +179,12 @@
                                 <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>ClickP4 Protocol</strong>
+                                    <strong>Flex4 Protocol</strong>
                                 </h4>
-                                <p>Protocol definitions for ClickP4. Developers can extend the protocol stack by adding
-                                    componennts into ClickP4. Besides, it also defines the packets parser.
+                                <p>Protocol definitions for Flex4. Developers can extend the protocol stack by adding
+                                    componennts into Flex4. Besides, it also defines the packets parser.
                                 </p>
-                                <a href="https://github.com/clickp4/clickp4/tree/master/src/protocol" class="btn btn-light">Learn More</a>
+                                <a href="https://github.com/Flex4/Flex4/tree/master/src/protocol" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +200,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Building and runnning programmable networks with simpilicity, flexibility and reliability! </h1>
+            <h1>Building and runnning programmable networks with simpilicity, flexibility and high performance! </h1>
         </div>
     </aside>
 
@@ -277,16 +279,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>ClickP4</strong>
+                    <h4><strong>Flex4</strong>
                     </h4>
                     <p>FIT 4-204, Tsinghua University
                         <br>Beijing, 100084</p>
+                    <!--
                     <ul class="list-unstyled">
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yuz.thu@gmail.com">yuz.thu@gmail.com</a>
                         </li>
                     </ul>
                     <br>
-                    <!--
+                    
                     <ul class="list-inline">
                         <li>
                             <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
