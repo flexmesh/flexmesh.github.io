@@ -1,10 +1,12 @@
-FlexMesh : On-demand Orchestration of Network Features on the Programmable Data Plane
+## FlexMesh : Flexibly Chaining Network Features on Programmable Data Plane
 
 
-P4 enables operators to incorporate various network features and customize a switch profile through programming the control flow among these features.
-However, as the incorporated features increase in number, the switch profile inevitably incurs growing complexity in development and inflexibility to orchestrate features at runtime.
+Programmable data planes (PDP) enable operators to incorporate various network features and define the chains of these features in a _switch profile_.
+However, with the number of deployed features increasing, the _switch profile_ inevitably faces growing complexity during development and inflexibility to chain network features at runtime.
 
-This framework includes (1) a set of specification primitives, so operators can arbitrarily describe the desired feature orchestration for each flow at runtime without facing the complexity of programming the \textit{switch profile} during development; and (2) an innovative data plane model that supports mapping the user-specified orchestration to the data plane at runtime and flexibly enforces various orchestrations.
-
-
-We implement FlexMesh on software and hardware targets respectively and evaluate it based on comprehensive benchmarks. Results indicate that FlexMesh can remarkably simplify the development of P4 programs and enhance the flexibility of the programmable data plane.
+This paper presents FlexMesh, an integrated platform which aims to introduce flexibility and simplicity to PDP while being compatible with existing programmable devices.
+FlexMesh designs (1) a set of chaining primitives, so operators can easily describe the feature chain for each flow without facing the complexity of customizing the switch profile during development;
+and (2) a data plane model that can be configured at runtime and flexibly construct user-required feature chains.
+We implement FlexMesh based on P4 and evaluate it on software and hardware targets.
+Results indicate that with minor performance overheads,
+FlexMesh can be an efficient development-assistance tool for operators, as well as an automated platform to flexibly chain network features while keeping rigorous conformance to complex policies.
